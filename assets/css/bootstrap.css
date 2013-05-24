@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v2.3.0
+ * Bootstrap v2.3.1
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -6109,7 +6109,8 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 60px;
+	/*padding:60px;*/
+  padding: 20px 40px 20px 40px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
@@ -6123,7 +6124,8 @@ a.badge:focus {
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 60px;
+  /*font-size: 60px;*/
+  font-size:50px;
   line-height: 1;
   letter-spacing: -1px;
   color: inherit;

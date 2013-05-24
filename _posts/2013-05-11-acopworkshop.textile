@@ -1,0 +1,9 @@
+---
+layout: blogpost
+title: 'ACoP 2013: Model-based Meta-analysis to Support Decision-making in Clinical Drug Development workshop'
+author: Metrum Institute
+category: blog
+---
+Metrum Institute will host the "Model-based Meta-analysis to Support Decision-making in Clinical Drug Development":http://www.go-acop.org/2013/MBMA-workshop workshop at this year's ACoP. It will be taught by Metrum's own Bill Gillespie and Jonathan French on May 16.
+
+Read more about it "here":http://www.go-acop.org/2013/MBMA-workshop.

@@ -1,59 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Template &middot; Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+---
+layout: default
+---
 
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+				<h1>Welcome to Metrum Institute</h1>
+				<p class="herospace">At Metrum Institute, we are dedicated to the advancement of quantitative modeling and simulation in biomedical research, with particular emphasis on problems in clinical pharmacology and therapeutics. Our efforts include training courses in modeling & simulation techniques/methods, development of quantitative tools and software, publications, methods and applied research, symposia, and collaboration with the academic community in research and training of fellows and graduate students.</p>
+	
+				<p class="nonprofit"><i>Metrum Institute is a nonprofit organization under Section 501(c)(3) of the Internal Revenue Code.</i></p>
+				<!--<p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+				</div>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="/assets/js/html5shiv.js"></script>
-    <![endif]-->
+      <!-- Example row of columns -->
+      <div class="row">
+      	<div class="span4">
+        	<!--<p><i class="icon-fighter-jet icon-4x"></i></p>-->
+          	<h2>News</h2>
+          	{% for post in site.posts limit:3 %}
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
+							<div class="marketing">
+								<h3><a href="{{ post.url }}">
+								{{ post.title }} &raquo;</a></h3>
+								<p>{{ post.date | date: "%B %d, %Y" }} by {{ post.author }}</p>
+								<!--<img src="{{ post.image }}" />-->
+							</div>
+							<hr class="newslist">
 
-  <body style="padding-top:15px;">
-		<div class="container">
-    <img src="/assets/img/mi_logo.png" />
-		<div class="navbar">    
-			<div class="navbar-inner">
-				<ul class="nav">
-					<li><a href="#">About</a></li>
-					<li><a href="/software.html">Software</a></li>
-					<li><a href="#">Training</a></li>
-					<li><a href="#">Leadership</a></li>
-					<li><a href="#">Fellowship Opportunities</a></li>
-					<li><a href="#">Collaborations</a></li>
-					<li><a href="#">Funding</a></li>
-				</ul>
-			</div>
-		</div>
-    <hr />
+					  {% endfor %}
 
-      <div class="footer">
-        <p>Copyright &copy; Metrum Institute 2013</p>
+
+          	<p><a href="#">More news &raquo;</a></p>
+        </div>
+        <div class="span4" >
+        <!--<p><i class="icon-book icon-4x"></i></p>-->
+          <h2></i> Online training</h2>
+          <p>We offer courses on a broad range of pharmacometrics topics. Our courses are highly regarded in the industry, and online registration is fast and easy.</p>
+          <dl class="marketing">
+          	<dt><h3><a href="http://metrum-institute.org">Course Store</a></h3></dt>
+          	<dd>Register for courses online at the MI store.</dd>
+          	<dt><h3><a href="http://training.metruminstitute.org">Training Site</a></h3></dt>
+          	<dd>Go here to attend your courses!</dd>
+          </dl>
+          <!--<p><a class="btn" href="#">Register Online &raquo;</a></p>-->
+        </div>
+        <div class="span4">
+        <!--<p><i class="icon-cloud icon-4x"></i></p>-->
+          <h2>Contact us</h2>
+          <p>Get in touch with us with questions or if you're interesting in contributing.</p>
+          <dl class="marketing">
+          	<dt><h3><i class="icon-envelope"></i> Email</h3></dt>
+          	<dd><script type="text/javascript">
+      			<!--
+      			
+      			preAddy = 'info'
+      			postAddy = 'metruminst.org'
+						document.write('<a href="mailto:' + preAddy + '@' + postAddy + '">' + preAddy + '@' + postAddy + '</a>')
+      			//-->
+      		</script>
+      		<noscript>
+      			<strong style="color:red;">[enable javascript to view email address]</strong>
+      		</noscript></dd>
+          	<dt><h3><i class="icon-phone"></i> Phone</h3></dt>
+          	<dd>(888) 398-3109</dd>
+          	<dt><h3><i class="icon-globe"></i> Address</h3></dt>
+          	<dd>2 Tunxis Rd, Suite 112</dd>
+          	<dd>Tariffville, CT</dd>
+          </dl>
+          <!--<p><a class="btn" href="#">Visit Training Site &raquo;</a></p>-->
+       </div>
       </div>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/bootstrap.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
-
-  </body>
-</html>

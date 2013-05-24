@@ -1,0 +1,38 @@
+---
+layout: default
+---
+	<!--<div class="row">
+		<div class="span12">
+			<h3 class="">{{page.title}}</h3>
+			<p>{{ page.date | date: "%d %B %Y" }} by {{ page.author }}</p>
+			<img src="{{ page.image }}" />
+			{{ content }}
+		</div>
+	</div>-->
+
+
+<div class="row">
+	<div class="span8">
+			<div class="blogentry">
+						<div class="row-fluid bloghead">
+							<div class="span10">
+								<h2><a href="{{ post.url }}">{{ page.title }}</a></h2>
+								<p class="blogentry"><i>by {{ page.author }}</i></p>
+							</div>
+							<div class="span2"><div class="blogdate"><p>{{ page.date | date: "%B" }}</p><h4>{{ page.date | date: "%d" }}</h4><p>{{ page.date | date: "%Y" }}</p></div></div>
+						</div>
+					{{ content }}
+					<!--<img src="{{ post.image }}" />-->
+				</div>
+	</div>
+	<div class="span3 offset1">
+		<h2 class="recent">Recent Posts</h2>
+		{% for post in site.posts limit:5 %}
+
+			<p><a href="{{ post.url }}">{{ post.title }} &raquo;</a></p>
+			<hr class="newslist">
+			<!--<img src="{{ post.image }}" />-->
+
+		{% endfor %}
+	</div>
+</div>

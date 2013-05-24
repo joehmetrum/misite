@@ -1,0 +1,7 @@
+---
+layout: blogpost
+title: 'Welcome to the new Metrum Institute homepage'
+author: Metrum Institute
+category: blog
+---
+Hope you like our new site. Important links to training courses and contact information are up, with more to come soon. Keep an eye on News for updates.
